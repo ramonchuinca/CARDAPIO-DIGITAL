@@ -1,35 +1,27 @@
 <!-- eslint-disable vue/no-reserved-component-names -->
 <template>
    <header>   
-    <div id="App">
-      <Menu />
-    </div>
-  </header>
+      <Header/>
+      <RouterView />
+
   
-  <RouterView />
-
-
+      <!-- <Menu /> -->
+  </header>
 </template>
 
-<script>
+<script setup>
 import Menu from './components/Menu.vue'
+import Header from './components/Header.vue'
+import { defineComponent } from 'vue'
 // import { RouterLink, RouterView } from 'vue-router'
 // import HelloWorld from './components/HelloWorld.vue'
 
-export default {
-  name: 'App',
-  components: {
-    // eslint-disable-next-line vue/no-reserved-component-names
-    Menu
-  }
-}
+
 
 </script>
 
 
 <style scoped>
-
-
 /* Estilos globais podem ser adicionados aqui */
 body {
   font-family: Arial, sans-serif;
@@ -37,4 +29,5 @@ body {
   margin: 0;
   padding: 20px;
 }
+
 </style>

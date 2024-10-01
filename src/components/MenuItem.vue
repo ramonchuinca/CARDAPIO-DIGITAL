@@ -22,7 +22,7 @@
     methods: {
       addToOrder(item) {
         // Número de telefone do restaurante
-        const telefone = '556900000000'; // Substitua pelo número do WhatsApp do restaurante
+        const telefone = 'colocar o numero aqui'; // Substitua pelo número do WhatsApp do restaurante
         
         // Mensagem personalizada com nome, preço e link da imagem
         const mensagem = `
@@ -49,14 +49,17 @@
   <style scoped>
   .menu-item {
     display: flex;
-    border: 1px solid #ccc;
+    border: 1px solid green;
     margin: 10px;
     padding: 10px;
+    background-color: black;
+    color: aliceblue;
   }
   .item-image {
     width: 150px;
     height: 150px;
     object-fit: cover;
+    border: 4px solid #fff;
   }
   .item-details {
     margin-left: 20px;
