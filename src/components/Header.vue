@@ -23,5 +23,9 @@
 
 </script>
 <style>
-    
+.d-flex {
+  background-color:#25D366; /* Cor de fundo (bg-dark) */
+  padding: 10px; /* Adiciona algum espaçamento interno, se necessário */
+  background-size: cover; /* Faz a imagem cobrir todo o contêiner */
+}
 </style>
