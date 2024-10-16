@@ -10,7 +10,10 @@
 <script setup>
 import { reactive, onMounted } from "vue";
 import MenuItem from "./MenuItem.vue";
+import { useCarrinhoStore } from '@/store/carrinhoStore'
+const cart = useCarrinhoStore()
 const items = reactive([
+
   {
     id: 1,
     nome: "Pizza Margherita",
@@ -33,9 +36,17 @@ const items = reactive([
     descricao: "Carne bovina, Arroz, Farofa, Macaxeira,Vinagrete,Vatapa.",
     preco: 30.0,
     imagem:
-      "./src/assets/demo-1-bg.jpg",
+      "https://th.bing.com/th/id/OIP.BJ6NUci24xMwGb3viVjGGgHaE7?rs=1&pid=ImgDetMain",
   },
   {
+    id: 4,
+    nome: "Espetinho de frango",
+    descricao: "Frango, Arroz, Farofa, Macaxeira,Vinagrete,Vatapa.",
+    preco: 30.0,
+    imagem:
+      "https://i.pinimg.com/736x/45/12/fa/4512fa2704be1ef2b25a72c676e7f5c2--link-youtube.jpg",
+  },
+   {
     id: 4,
     nome: "Espetinho de frango",
     descricao: "Frango, Arroz, Farofa, Macaxeira,Vinagrete,Vatapa.",

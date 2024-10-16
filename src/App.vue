@@ -1,10 +1,10 @@
 <!-- eslint-disable vue/no-reserved-component-names -->
 <template>
   <div id="large-header" class="large-header">
-    <canvas id="demo-canvas"></canvas>
-    <header class="bg h-100">   
+    <header class="bg ">   
        <Header/>
        <RouterView />
+       
        <!-- <Menu /> -->
    </header>
 
@@ -29,15 +29,15 @@ header {
   padding: 20px;
   background-size: cover; /* Faz a imagem cobrir todo o contêiner */
   background-position: center; /* Centraliza a imagem */
-  min-height: 100vh;
-  color:aliceblue;
-}
-.bg{
-    background-image: url('./src/assets/demo-1-bg.jpg');
-  
+  color: aliceblue;
+  display: flex;
+  flex-direction: column; /* Alinha os itens na vertical */
+  min-height: 100vh; /* Garante que o header ocupe no mínimo 100% da altura da tela */
 }
 
-
-
+.bg {
+  background-image: url('./src/assets/demo-1-bg.jpg');
+  flex-grow: 1; /* Faz com que a imagem de fundo ocupe o espaço restante */
+}
 
 </style>

@@ -14,18 +14,22 @@
              <a class="nav-link" href="#">Link</a>
            </li>
            <li class="nav-item">
-             <a class="nav-link disabled" style="color:white;"  href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+             <a class="nav-link disabled" style="color:white;"  href="#" tabindex="-1" aria-disabled="true">{{ qty }}</a>
            </li>
          </ul>
       </div>
+      
 </template>
-<script>
+<script setup>
+import { useCarrinhoStore } from '@/store/carrinhoStore'
+import { computed, ref } from 'vue';
+
+// access the `store` variable anywhere in the component ✨
+const cart = useCarrinhoStore()
+const qty = computed(()=>cart.qty)
+
 
 </script>
 <style>
-.d-flex {
-  background-color:#25D366; /* Cor de fundo (bg-dark) */
-  padding: 10px; /* Adiciona algum espaçamento interno, se necessário */
-  background-size: cover; /* Faz a imagem cobrir todo o contêiner */
-}
+
 </style>

@@ -5,22 +5,21 @@
         <h3>{{ item.nome }}</h3>
         <p>{{ item.descricao }}</p>
         <p class="preco">R$ {{ item.preco.toFixed(2) }}</p>
-        <button @click="addToOrder(item)">Pedir pelo WhatsApp</button>
+        <button @click="addQty">Pedir pelo WhatsApp</button>
       </div>
     </div>
   </template>
   
-  <script>
-  export default {
-    name: 'MenuItem',
-    props: {
-      item: {
-        type: Object,
-        required: true
-      }
-    },
-    methods: {
-      addToOrder(item) {
+  <script setup>
+  import { useCarrinhoStore } from '@/store/carrinhoStore'
+  const cart = useCarrinhoStore() 
+ function addQty(){
+  cart.addQty(1)
+ }
+
+  defineProps(['item'])
+
+  function addToOrder(item) {
         // Número de telefone do restaurante
         const telefone = 'colocar o numero aqui'; // Substitua pelo número do WhatsApp do restaurante
         
@@ -41,8 +40,7 @@
         // Abrir o WhatsApp em uma nova aba
         window.open(url, '_blank');
       }
-    }
-  }
+
   </script>
   
   
@@ -52,7 +50,7 @@
     border: 1px solid green;
     margin: 10px;
     padding: 10px;
-    background-color: black;
+    background-color:#212529;
     color: aliceblue;
   }
   .item-image {
