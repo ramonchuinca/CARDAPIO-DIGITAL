@@ -35,8 +35,7 @@
         </div>
     </div>
 </nav>
-
-      
+    
 </template>
 <script setup>
 import { useCarrinhoStore } from '@/store/carrinhoStore'

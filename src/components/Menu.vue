@@ -14,46 +14,71 @@ import { useCarrinhoStore } from '@/store/carrinhoStore'
 const cart = useCarrinhoStore()
 const items = reactive([
 
-  {
-    id: 1,
-    nome: "Pizza Margherita",
-    descricao:
-      "Molho de tomate, mussarela, manjericão,tomate,Azeitonas pretas.",
-    preco: 25.0,
-    imagem:
-      "https://bemaisaude.com.br/wp-content/uploads/2022/06/Aprenda-a-receita-da-classica-pizza-margherita.jpg",
-  },
-  {
-    id: 2,
-    nome: "Hambúrguer Gourmet",
-    descricao: "Carne bovina, queijo cheddar, alface, tomate.",
-    preco: 30.0,
-    imagem: "./src/assets/hanburguer.jpg",
-  },
-  {
-    id: 3,
-    nome: "Espetinho de Carne ",
-    descricao: "Carne bovina, Arroz, Farofa, Macaxeira,Vinagrete,Vatapa.",
-    preco: 30.0,
-    imagem:
-      "https://th.bing.com/th/id/OIP.BJ6NUci24xMwGb3viVjGGgHaE7?rs=1&pid=ImgDetMain",
-  },
-  {
-    id: 4,
-    nome: "Espetinho de frango",
-    descricao: "Frango, Arroz, Farofa, Macaxeira,Vinagrete,Vatapa.",
-    preco: 30.0,
-    imagem:
-      "https://i.pinimg.com/736x/45/12/fa/4512fa2704be1ef2b25a72c676e7f5c2--link-youtube.jpg",
-  },
-   {
-    id: 4,
-    nome: "Espetinho de frango",
-    descricao: "Frango, Arroz, Farofa, Macaxeira,Vinagrete,Vatapa.",
-    preco: 30.0,
-    imagem:
-      "https://i.pinimg.com/736x/45/12/fa/4512fa2704be1ef2b25a72c676e7f5c2--link-youtube.jpg",
-  },
+
+
+{
+        id: 1,
+        nome: "coca-cola",
+        descricao: "a melhor e a mais gelada",
+        preco: 8.00,
+        imagem: "https://th.bing.com/th/id/OIP.ljaiKeA72XoIOhbUrYbxLwHaHa?rs=1&pid=ImgDetMain"
+    },
+    {
+        id: 2,
+        nome: "fanta-laranja",
+        descricao: "o verdadeiro gosto da laranja",
+        preco: 8.00,
+        imagem: "https://www.drogariaminasbrasil.com.br/media/product/dc1/refrigerante-fanta-laranja-lata-350ml-6eb.jpg"
+    },
+    {
+        id: 3,
+        nome: "coca-cola 2lt",
+        descricao: "super gelada",
+        preco: 12.00,
+        imagem: "https://th.bing.com/th/id/OIP.bk4TA6ZdBhVeekQe2bpfGAHaHa?rs=1&pid=ImgDetMain"
+    },
+    {
+        id: 4,
+        nome: "Porção de Batata Frita",
+        descricao: "Porção deliciosa de batatas fritas.",
+        preco: 20.00,
+        imagem: "https://bing.com/th?id=OSK.53b7bd3cbb1da38ee679787844686c7d"
+    },
+    {
+        id: 5,
+        nome: "Porção de calabresa",
+        descricao: "Porção deliciosa de calabresa.",
+        preco: 20.00,
+        imagem: "https://bing.com/th?id=OSK.628735f1c88887ace98202e9cac467d7"
+    },
+    {
+        id: 6,
+        nome: "X-TUDO",
+        descricao: "delicioso x-tudo.",
+        preco: 20.00,
+        imagem: "https://th.bing.com/th/id/OIP.eGWx5YD7nwvzoHTaC62EkAHaG2?rs=1&pid=ImgDetMain"
+    },
+    {
+        id: 7,
+        nome: "X-BURGUER",
+        descricao: "delicioso x-burguer.",
+        preco: 20.00,
+        imagem: "https://th.bing.com/th/id/OIP.eGWx5YD7nwvzoHTaC62EkAHaG2?rs=1&pid=ImgDetMain"
+    },
+    {
+        id: 8,
+        nome: "X-SALADA",
+        descricao: "delicioso x-salada.",
+        preco: 20.00,
+        imagem: "https://th.bing.com/th/id/OIP.eGWx5YD7nwvzoHTaC62EkAHaG2?rs=1&pid=ImgDetMain"
+    },
+    {
+        id: 9,
+        nome: "X-BAGUNÇA",
+        descricao: "delicioso x-bagunça.",
+        preco: 20.00,
+        imagem: "https://th.bing.com/th/id/OIP.eGWx5YD7nwvzoHTaC62EkAHaG2?rs=1&pid=ImgDetMain"
+    }
 ]);
 
 
