@@ -1,13 +1,12 @@
 <template>
   <div>
-    
+    <h1> ola ola</h1>
   </div>
 </template>
-<script>
-export default {
-  
-}
+<script setup>
+
 </script>
-<style lang="">
+
+<style>
   
 </style>
